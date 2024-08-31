@@ -1,0 +1,157 @@
+.landing_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 1550px;
+        height: 655px;
+        margin-top: 70px;
+        overflow: hidden;
+        .hero_content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 580px;
+            margin-top: 200px;
+            gap: 80px;
+            
+
+            .text1 {
+                color: #ffffff;
+                font-size: 46px;
+            }
+
+            .text2 {
+                color: #F6F740;
+                font-size: 24px;
+            }
+        }
+
+        .imagehero {
+            margin-top: 60px;
+            width: 516px;
+            height: 516px;
+        }
+    }
+    .hero::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('./sports.jpg');
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+        z-index: -1;
+    }
+    
+
+    .marca_section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1550px;
+        height: 295px;
+        margin-top: 72px;
+        gap: 120px;
+
+        .container_titulo {
+            display: flex;
+            width: 100%;
+            max-width: 426px;
+            height: 100%;
+            border-radius: 10px;
+            align-items: center;
+            padding: 60px;
+            background-color: #101820;
+            color: #ffffff;
+
+            h2 {
+                font-size: 36px;
+                max-width: 240px;
+            }
+        }
+
+        
+    }
+
+    .produto_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 47px 141px;
+        margin-top: 72px;
+        width: 100%;
+        max-width: 1854px;
+        min-height: 591px;
+        border-radius: 8px;
+        gap: 40px;
+
+        h1 {
+            font-size: 40px;
+        }
+        .card_produto{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 82px;
+        }
+    }
+
+    .Sobre_section {
+        display: flex;
+        flex-direction: column;
+        background-color: #009DDC;
+        padding: 47px 141px;
+        border-radius: 50px;
+        gap: 100px;
+        h1{
+            font-size: 40px;
+            color: #ffffff;
+        }
+        .container_sobre {
+            display: flex;
+            flex-direction: row;
+            gap: 150px;
+            .texto_sobre {
+                display: flex;
+                width: 100%;
+                max-width: 960px;
+                padding: 20px 170px;
+                align-items: center;
+                position: relative;
+                border-radius: 10px;
+                background-color: #ffffff;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+                span {
+                    font-size: 24px;
+                    font-weight: 500;
+                    text-align: center;
+                }
+
+            }
+            .img_sobre {
+                img { border-radius: 10px;
+                    max-width: 585px;
+                    max-height: 438px;}
+            }
+        }
+    }
+}
